@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Unity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="registrationForm">
+            <h1>Curso de Unity</h1>
+            <p class="subtitle">Aprende desarrollo de videojuegos</p>
+
+            <form id="courseForm">
+                <input type="text" id="name" name="name" required placeholder="Nombre completo">
+                
+                <input type="email" id="email" name="email" required placeholder="Email">
+                
+                <input type="text" id="discord" name="discord" required placeholder="Usuario de Discord">
+                
+                <select id="experience" name="experience" required>
+                    <option value="">Nivel de experiencia</option>
+                    <option value="beginner">Principiante</option>
+                    <option value="intermediate">Intermedio</option>
+                    <option value="advanced">Avanzado</option>
+                </select>
+                
+                <textarea id="motivation" name="motivation" required placeholder="¿Por qué quieres aprender Unity?"></textarea>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+
+        <div id="successMessage" class="success-message">
+            <div class="checkmark">✓</div>
+            <h2>Registro exitoso</h2>
+            <p>Únete a nuestro Discord para comenzar</p>
+            <a href="https://discord.gg/tu-servidor" class="discord-btn" target="_blank">Ir a Discord</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
